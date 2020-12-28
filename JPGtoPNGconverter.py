@@ -21,8 +21,7 @@ for image in os.listdir(sys.argv[1]):
 		print(clean_name)
 		img = Image.open(f'{sys.argv[1]}/{image}') ## access the file for usage and processing.
 		## img.save(f'{sys.argv[1]}/new/mod_img.png','png')
-		## instead of giving file a new name use the previous one.
-		## by calling the variable that stores file with its name.
+		## instead of giving file a new name use the previous one by calling the variable that stores file with its name.
 		img.save(f'{sys.argv[1]}/new/{clean_name}.png','png')
 		print('Conversion Complete!')
 	else:
